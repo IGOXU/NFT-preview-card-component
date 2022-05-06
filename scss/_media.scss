@@ -1,0 +1,14 @@
+@media (min-width: 375px) {
+  .card-container{
+    min-height: 540px;
+  }
+  
+  .card{
+    height: 580px;
+    width: 352px;
+
+    &__header{
+      height: 17rem;
+    }
+  }
+}

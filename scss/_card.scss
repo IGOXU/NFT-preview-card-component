@@ -1,0 +1,91 @@
+.card-container{
+  align-items: center;
+  background-color: color("verydark-blue-main");
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  min-height: 640px;
+  width: 100%;
+}
+
+hr{
+  @include no-appearence;
+  border-top: .5px solid rgba(color("softblue"), 0.2);
+  margin: 1rem auto;
+  outline: none;
+  width: 100%;
+}
+
+.card{
+  background-color: color("verydark-blue-card");
+  border-radius: 1rem;
+  height: 540px;
+  padding: 1.4rem;
+  width: 320px;
+  @include flex(stretch, space-between, stretch, column);
+  
+  &__header{
+    @include background-image("../images/image-equilibrium.jpg", center, no-repeat, cover);
+    border-radius: 1rem;
+    height: 13rem;
+    width: 100%;
+
+    &:hover{
+      background-color: rgba(color("softblue"), 0.2);
+      cursor: pointer;
+      position: relative;
+      
+      &::after{
+        @include flex(center, center);
+        background-color: rgba(color("cyan"), .5);
+        border-radius: 1rem;
+        content: url(../images/icon-view.svg);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+
+  &__body{
+    h1{
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    p{
+      line-height: 1.4;
+    }
+  }
+
+  &__text{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    
+    figure{
+      color: color("softblue");
+      margin-right: .5rem; 
+    }
+
+    div:nth-child(1){
+      @include flex(center, start);
+      img { width: .8rem;}
+    }
+    
+    div:nth-child(2){
+      @include flex(center, end);
+      img { width: 1.3rem;}
+    }
+  }
+
+  &__footer{
+    @include flex(center, start);
+
+    img{
+      border: 1px solid color("white");
+      border-radius: 50%;
+      width: 1.9rem;
+    }
+  }
+}

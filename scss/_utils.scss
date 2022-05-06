@@ -1,0 +1,23 @@
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.text-cyan{
+  color: color("cyan");
+}
+
+.text-softblue{
+  color: color("softblue");
+}
+
+.text-white{
+  color: color("white");
+}
+
+.ml-1{
+  margin-left: 1rem;
+}

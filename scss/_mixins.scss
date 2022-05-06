@@ -1,0 +1,21 @@
+@mixin no-appearence {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+@mixin flex($alignItems: stretch, $content: flex-start, $justifyItems: stretch, $direction: "row") {
+  align-items: $alignItems;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  justify-items: $justifyItems;
+}
+
+@mixin background-image($image, $position, $repeat, $size) {
+  background-image: url($image);
+  background-position: $position;
+  background-repeat: $repeat;
+  background-size: $size;
+}

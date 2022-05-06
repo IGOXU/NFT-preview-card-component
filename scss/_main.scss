@@ -7,3 +7,26 @@
   margin: 0;
   padding: 0;
 }
+
+a{
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+
+  &:hover{
+    color: color("cyan");
+  }
+}
+
+figure{
+  display: inline-flex;
+}
+
+h1{
+  color: color("white");
+  text-transform: capitalize;
+}
+
+p{
+  font-size: .9rem;
+}
