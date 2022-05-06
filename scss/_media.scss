@@ -1,11 +1,15 @@
 @media (min-width: 375px) {
   .card-container{
-    min-height: 540px;
+    min-height: 620px;
   }
   
   .card{
-    height: 580px;
-    width: 352px;
+    height: 595px;
+    width: 350px;
+
+    &__body{
+      p{ font-size: 1rem; }
+    }
 
     &__header{
       height: 17rem;

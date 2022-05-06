@@ -1,11 +1,4 @@
-@mixin no-appearence {
-  appearance: none;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-@mixin flex($alignItems: stretch, $content: flex-start, $justifyItems: stretch, $direction: "row") {
+@mixin flex($alignItems: stretch, $content: flex-start, $justifyItems: stretch, $direction: row) {
   align-items: $alignItems;
   display: flex;
   flex-direction: $direction;
